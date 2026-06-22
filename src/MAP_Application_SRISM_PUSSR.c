@@ -313,6 +313,11 @@ extern map_correlation_id_t app_map_get_new_correlation_id(void);
 void send_srism_v3_req(map_open_confirm_t *mo_forw_sm_ind_hdr);
 void fill_srism_v3_req_arg(map_routing_info_for_sm_request_t *sri_for_sm_req);
 //void send_open_req(void);
+/* changes by aman for Parse SRI for SM S*/
+void send_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag);
+void send_v2_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag);
+void send_v1_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag);
+/* changes by aman for Parse SRI for SM E*/
 
 void send_mtfsm_v3_req(map_mt_forward_sm_confirm_t *mt_fsm_conf);
 void fill_mtfsm_v3_req_arg(map_mt_forward_sm_request_t *mt_forw_sm_req);
@@ -18125,6 +18130,138 @@ void map_fill_mofsm_v3_res_hdr(map_service_header_t *mo_forw_sm_resp_hdr, map_se
     mo_forw_sm_resp_hdr->last_component = MAP_TRUE;
 }
 
+/* changes by aman for Parse SRI for SM S*/
+void map_fill_send_rout_info_for_sm_resp(map_routing_info_for_sm_response_t *send_rout_info_res)
+{
+	send_rout_info_res->choice = MAP_RESULT;
+	send_rout_info_res->response.result.imsi.length = 8;
+	send_rout_info_res->response.result.imsi.value[0] = 0x13;
+	send_rout_info_res->response.result.imsi.value[1] = 0x06;
+	send_rout_info_res->response.result.imsi.value[2] = 0x01;
+	send_rout_info_res->response.result.imsi.value[3] = 0x30;
+	send_rout_info_res->response.result.imsi.value[4] = 0x20;
+	send_rout_info_res->response.result.imsi.value[5] = 0x35;
+	send_rout_info_res->response.result.imsi.value[6] = 0x18;
+	send_rout_info_res->response.result.imsi.value[7] = 0xf3;
+	send_rout_info_res->response.result.location_info_with_lmsi.network_node_number.length = 4;
+	send_rout_info_res->response.result.location_info_with_lmsi.network_node_number.value[0] = 0x91;
+	send_rout_info_res->response.result.location_info_with_lmsi.network_node_number.value[1] = 0x11;
+	send_rout_info_res->response.result.location_info_with_lmsi.network_node_number.value[2] = 0x12;
+	send_rout_info_res->response.result.location_info_with_lmsi.network_node_number.value[3] = 0x13;
+	send_rout_info_res->response.result.location_info_with_lmsi.is_lmsi = MAP_FALSE;
+	send_rout_info_res->response.result.location_info_with_lmsi.is_extension = MAP_FALSE;
+}
+
+void map_fill_send_v2_rout_info_for_sm_resp(map_v2_routing_info_for_sm_response_t *send_rout_info_res)
+{
+	send_rout_info_res->choice = MAP_RESULT;
+	send_rout_info_res->response.result.imsi.length = 8;
+	send_rout_info_res->response.result.imsi.value[0] = 0x13;
+	send_rout_info_res->response.result.imsi.value[1] = 0x06;
+	send_rout_info_res->response.result.imsi.value[2] = 0x01;
+	send_rout_info_res->response.result.imsi.value[3] = 0x30;
+	send_rout_info_res->response.result.imsi.value[4] = 0x20;
+	send_rout_info_res->response.result.imsi.value[5] = 0x35;
+	send_rout_info_res->response.result.imsi.value[6] = 0x18;
+	send_rout_info_res->response.result.imsi.value[7] = 0xf3;
+	send_rout_info_res->response.result.location_info_with_lmsi.location_info.choice = 0;
+	send_rout_info_res->response.result.location_info_with_lmsi.location_info.u.msc_number.length = 4;
+	send_rout_info_res->response.result.location_info_with_lmsi.location_info.u.msc_number.value[0] = 0x91;
+	send_rout_info_res->response.result.location_info_with_lmsi.location_info.u.msc_number.value[1] = 0x11;
+	send_rout_info_res->response.result.location_info_with_lmsi.location_info.u.msc_number.value[2] = 0x12;
+	send_rout_info_res->response.result.location_info_with_lmsi.location_info.u.msc_number.value[3] = 0x13;
+	send_rout_info_res->response.result.location_info_with_lmsi.is_lmsi = MAP_FALSE;
+}
+
+void map_fill_send_v1_rout_info_for_sm_resp(map_v1_send_routing_info_for_sm_response_t *send_rout_info_res)
+{
+	send_rout_info_res->choice = MAP_RESULT;
+	send_rout_info_res->response.result.imsi.length = 8;
+	send_rout_info_res->response.result.imsi.value[0] = 0x13;
+	send_rout_info_res->response.result.imsi.value[1] = 0x06;
+	send_rout_info_res->response.result.imsi.value[2] = 0x01;
+	send_rout_info_res->response.result.imsi.value[3] = 0x30;
+	send_rout_info_res->response.result.imsi.value[4] = 0x20;
+	send_rout_info_res->response.result.imsi.value[5] = 0x35;
+	send_rout_info_res->response.result.imsi.value[6] = 0x18;
+	send_rout_info_res->response.result.imsi.value[7] = 0xf3;
+}
+
+void send_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag)
+{
+	int error = 0;
+	map_routing_info_for_sm_response_t *mo_fsm_res = NULL;
+	map_api_struct_t *send_api = NULL;
+
+	send_api = (map_api_struct_t *)app_mem_get(sizeof(map_api_struct_t));
+	map_memzero(send_api, sizeof(map_api_struct_t));
+	mo_fsm_res = (map_routing_info_for_sm_response_t *)app_mem_get(sizeof(map_routing_info_for_sm_response_t));
+	map_memzero(mo_fsm_res, sizeof(map_routing_info_for_sm_response_t));
+
+	fill_api_header(&(send_api->header), user_id);
+	map_fill_res_hdr(&(mo_fsm_res->header), mo_forw_sm_ind_hdr);
+	mo_fsm_res->header.last_component = last_flag;
+
+	map_fill_send_rout_info_for_sm_resp(mo_fsm_res);
+
+	send_api->header.api_id = MAP_SEND_ROUTING_INFO_FOR_SM_RESPONSE;
+	send_api->header.len = sizeof(map_routing_info_for_sm_response_t);
+	send_api->header.ver = version;
+	send_api->header.spare1 = g_sap;
+	send_api->p_data = mo_fsm_res;
+	app_map_send_to_app_map((unsigned char *)send_api, &error);
+}
+
+void send_v2_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag)
+{
+	int error = 0;
+	map_v2_routing_info_for_sm_response_t *mo_fsm_res = NULL;
+	map_api_struct_t *send_api = NULL;
+
+	send_api = (map_api_struct_t *)app_mem_get(sizeof(map_api_struct_t));
+	map_memzero(send_api, sizeof(map_api_struct_t));
+	mo_fsm_res = (map_v2_routing_info_for_sm_response_t *)app_mem_get(sizeof(map_v2_routing_info_for_sm_response_t));
+	map_memzero(mo_fsm_res, sizeof(map_v2_routing_info_for_sm_response_t));
+
+	fill_api_header(&(send_api->header), user_id);
+	map_fill_res_hdr(&(mo_fsm_res->header), mo_forw_sm_ind_hdr);
+	mo_fsm_res->header.last_component = last_flag;
+
+	map_fill_send_v2_rout_info_for_sm_resp(mo_fsm_res);
+
+	send_api->header.api_id = MAP_SEND_ROUTING_INFO_FOR_SM_RESPONSE;
+	send_api->header.len = sizeof(map_v2_routing_info_for_sm_response_t);
+	send_api->header.ver = version;
+	send_api->header.spare1 = g_sap;
+	send_api->p_data = mo_fsm_res;
+	app_map_send_to_app_map((unsigned char *)send_api, &error);
+}
+
+void send_v1_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag)
+{
+	int error = 0;
+	map_v1_send_routing_info_for_sm_response_t *mo_fsm_res = NULL;
+	map_api_struct_t *send_api = NULL;
+
+	send_api = (map_api_struct_t *)app_mem_get(sizeof(map_api_struct_t));
+	map_memzero(send_api, sizeof(map_api_struct_t));
+	mo_fsm_res = (map_v1_send_routing_info_for_sm_response_t *)app_mem_get(sizeof(map_v1_send_routing_info_for_sm_response_t));
+	map_memzero(mo_fsm_res, sizeof(map_v1_send_routing_info_for_sm_response_t));
+
+	fill_api_header(&(send_api->header), user_id);
+	map_fill_res_hdr(&(mo_fsm_res->header), mo_forw_sm_ind_hdr);
+	mo_fsm_res->header.last_component = last_flag;
+
+	map_fill_send_v1_rout_info_for_sm_resp(mo_fsm_res);
+
+	send_api->header.api_id = MAP_SEND_ROUTING_INFO_FOR_SM_RESPONSE;
+	send_api->header.len = sizeof(map_v1_send_routing_info_for_sm_response_t);
+	send_api->header.ver = version;
+	send_api->header.spare1 = g_sap;
+	send_api->p_data = mo_fsm_res;
+	app_map_send_to_app_map((unsigned char *)send_api, &error);
+}
+/* changes by aman for Parse SRI for SM E*/
 
 
 /*Fills the api header */
@@ -19221,7 +19358,36 @@ int app_map_send_to_app_map_user (unsigned char *p_buffer,
 				}
 				break;
 
-
+			/* changes by aman for Parse SRI for SM S*/
+			case MAP_SEND_ROUTING_INFO_FOR_SM_INDICATION:
+			{
+				if(p_api->header.ver == 3)
+				{
+					printf("MAP_SEND_ROUTING_INFO_FOR_SM_INDICATION Indication recieved\n");
+					map_routing_info_for_sm_indication_t *p_rout_ind = NULL;
+					p_rout_ind = (map_routing_info_for_sm_indication_t *)p_api->p_data;
+					send_routing_info_for_sm_resp(p_api->header.user_id, p_api->header.ver, p_rout_ind->header, 1);
+					send_close_req(p_api->header.user_id, p_rout_ind->header.dlg_id, p_api->header.ver);
+				}
+				else if(p_api->header.ver == 2)
+				{
+					printf("MAP_SEND_ROUTING_INFO_FOR_SM_INDICATION Indication recieved for Ver 2\n");
+					map_v2_routing_info_for_sm_indication_t *p_rout_ind = NULL;
+					p_rout_ind = (map_v2_routing_info_for_sm_indication_t *)p_api->p_data;
+					send_v2_routing_info_for_sm_resp(p_api->header.user_id, p_api->header.ver, p_rout_ind->header, 1);
+					send_close_req(p_api->header.user_id, p_rout_ind->header.dlg_id, p_api->header.ver);
+				}
+				else if(p_api->header.ver == 1)
+				{
+					printf("MAP_SEND_ROUTING_INFO_FOR_SM_INDICATION Indication recieved for Ver 1\n");
+					map_v1_send_routing_info_for_sm_indication_t *p_rout_ind = NULL;
+					p_rout_ind = (map_v1_send_routing_info_for_sm_indication_t *)p_api->p_data;
+					send_v1_routing_info_for_sm_resp(p_api->header.user_id, p_api->header.ver, p_rout_ind->header, 1);
+					send_close_req(p_api->header.user_id, p_rout_ind->header.dlg_id, p_api->header.ver);
+				}
+			}
+			break;
+			/* changes by aman for Parse SRI for SM E*/
 
 			default:
 				printf("SOME OTHER API ###################### [%d] \n",p_api->header.api_id);
