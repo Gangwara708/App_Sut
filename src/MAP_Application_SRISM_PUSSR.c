@@ -313,9 +313,11 @@ extern map_correlation_id_t app_map_get_new_correlation_id(void);
 void send_srism_v3_req(map_open_confirm_t *mo_forw_sm_ind_hdr);
 void fill_srism_v3_req_arg(map_routing_info_for_sm_request_t *sri_for_sm_req);
 //void send_open_req(void);
+/* changes by aman for Parse SRI for SM S*/
 void send_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag);
 void send_v2_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag);
 void send_v1_routing_info_for_sm_resp(int user_id, int version, map_service_header_t mo_forw_sm_ind_hdr, int last_flag);
+/* changes by aman for Parse SRI for SM E*/
 
 void send_mtfsm_v3_req(map_mt_forward_sm_confirm_t *mt_fsm_conf);
 void fill_mtfsm_v3_req_arg(map_mt_forward_sm_request_t *mt_forw_sm_req);
@@ -18128,6 +18130,7 @@ void map_fill_mofsm_v3_res_hdr(map_service_header_t *mo_forw_sm_resp_hdr, map_se
     mo_forw_sm_resp_hdr->last_component = MAP_TRUE;
 }
 
+/* changes by aman for Parse SRI for SM S*/
 void map_fill_send_rout_info_for_sm_resp(map_routing_info_for_sm_response_t *send_rout_info_res)
 {
 	send_rout_info_res->choice = MAP_RESULT;
@@ -18258,6 +18261,7 @@ void send_v1_routing_info_for_sm_resp(int user_id, int version, map_service_head
 	send_api->p_data = mo_fsm_res;
 	app_map_send_to_app_map((unsigned char *)send_api, &error);
 }
+/* changes by aman for Parse SRI for SM E*/
 
 
 /*Fills the api header */
@@ -19354,6 +19358,7 @@ int app_map_send_to_app_map_user (unsigned char *p_buffer,
 				}
 				break;
 
+			/* changes by aman for Parse SRI for SM S*/
 			case MAP_SEND_ROUTING_INFO_FOR_SM_INDICATION:
 			{
 				if(p_api->header.ver == 3)
@@ -19382,6 +19387,7 @@ int app_map_send_to_app_map_user (unsigned char *p_buffer,
 				}
 			}
 			break;
+			/* changes by aman for Parse SRI for SM E*/
 
 			default:
 				printf("SOME OTHER API ###################### [%d] \n",p_api->header.api_id);
