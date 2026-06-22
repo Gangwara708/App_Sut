@@ -1,0 +1,51 @@
+11111111111
+#TAG_LENGTH value(comma separated)
+#msisdn
+8 0x03,0x04,0x03,0x04,0x04,0x05,0x06,0x06
+#is_cug_check_info
+1 1
+#cug_check_info(cug_interlock (length,value),is_cug_outgoing_access,cug_outgoing_access (S8bit),extension)
+#cug_interlock
+4 0x00,0x02,0x02,0x02
+#is_cug_outgoing_access
+1 1
+#cug_outgoing_access
+1 0x01
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_number_of_forwarding
+1 1
+#number_of_forwarding U16bit
+1 0x01
+#interrogation_type enum
+1 1
+#is_or_interrogation
+1 1
+#or_interrogation S8bit 
+1 0x01
+#is_or_capability
+1 1
+#or_capability U16bit
+1 0x01
+#gmsc_gsmscf_address (length value)
+2 0x00,0x02
+#is_call_reference_number
+1 1
+#call_reference_number
+2 0x03,0x02
+#is_forwarding_reason
+1 1
+#forwarding_reason enum
+1 1
+#is_basic_service_group
+1 1
+#basic_service_group (choice length value)
+#choice
+1 1
+#basic_service_group length vvalue
+2 0x00,0x03
+

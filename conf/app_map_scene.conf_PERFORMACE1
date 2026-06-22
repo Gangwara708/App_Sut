@@ -1,0 +1,16 @@
+############################
+#  File : app_map_user.conf
+#  Name : Imran Lateef
+############################
+# API num_messages time_in_seconds
+#SENDER_THREAD
+[SENDER_SCENARIO_START]
+1
+MULTIPLE_DIALOGUE MAP_V2_UNSTRUCTURED_SS_REQUEST_REQUEST 5000 10 50000
+[END_SCENARIO]
+
+#RECIEVER_THREAD
+[RECIEVER_SCENARIO_START]
+1
+MULTIPLE_DIALOGUE MAP_PROVIDE_ROAMING_NUMBER_REQUEST 1 1 40 
+[END_SCENARIO]

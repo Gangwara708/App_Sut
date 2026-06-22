@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+APP_SET_MAX_FD	app_map_main.c	88;"	d	file:
+BT_SIZE	app_map_main.c	226;"	d	file:
+PRINT_COMPILE_TIME	test.c	4;"	d	file:
+STR_SIZE	app_map_main.c	227;"	d	file:
+app_map_bulk_i_am_active_sent	app_map_main.c	/^app_U8bit_t				app_map_bulk_i_am_active_sent = APP_FALSE;$/;"	v
+app_map_gb_dirname	app_map_main.c	/^app_S8bit_t    			app_map_gb_dirname[400];$/;"	v
+app_map_get_tep_api_stat	app_map_main.c	/^int app_map_get_tep_api_stat(int api_id, int *no_of_beps, app_get_tep_api_stats_t *p_tep_stats, int reset)$/;"	f
+app_map_get_user_lib_ver	app_map_main.c	/^int app_map_get_user_lib_ver(app_get_user_lib_ver_t *p_user_lib_ver)$/;"	f
+app_map_get_user_port_umr_so_name	app_map_main.c	/^app_U8bit_t app_map_get_user_port_umr_so_name (char *name)$/;"	f
+app_map_init	app_map_main.c	/^int	app_map_init$/;"	f
+app_map_init_ext	app_map_main.c	/^int	app_map_init_ext$/;"	f
+app_map_num_active_fep_count	app_map_main.c	/^app_U8bit_t				app_map_num_active_fep_count = 0;$/;"	v
+app_map_num_active_fep_list	app_map_main.c	/^app_U8bit_t				app_map_num_active_fep_list[256];$/;"	v
+app_map_port_init_datastructures	app_map_main.c	/^void app_map_port_init_datastructures $/;"	f
+app_map_pre_select	app_map_main.c	/^int app_map_pre_select$/;"	f
+app_map_schedule	app_map_main.c	/^int app_map_schedule$/;"	f
+app_map_send_bulk_i_am_active_to_ss7p	app_map_main.c	/^int app_map_send_bulk_i_am_active_to_ss7p(int *p_error)$/;"	f
+app_map_send_i_am_active_to_ss7p	app_map_main.c	/^int app_map_send_i_am_active_to_ss7p(unsigned int instance_id, int *p_error)$/;"	f
+app_map_send_to_app_map	app_map_main.c	/^int app_map_send_to_app_map$/;"	f
+app_map_start_param	app_map_main.c	/^app_start_param_t 		app_map_start_param; $/;"	v
+app_map_user_buffer_request	app_map_main.c	/^void app_map_user_buffer_request(unsigned int user_send_sock_buff, unsigned int user_recv_sock_buff)$/;"	f
+app_map_user_port_umr_initialize	app_map_main.c	/^app_void_t app_map_user_port_umr_initialize(app_void_t)$/;"	f
+app_map_user_stat_lock	app_map_main.c	/^QLOCK                       app_map_user_stat_lock;$/;"	v
+app_map_validate_n_store_start_param	app_map_main.c	/^int	app_map_validate_n_store_start_param$/;"	f
+app_mode	app_map_main.c	/^app_U8bit_t app_mode = APP_MAP_DISTRIBUTED_MODE;$/;"	v
+app_tcap_instance_status	app_map_main.c	/^app_U8bit_t        		app_tcap_instance_status = APP_INSTANCE_UNCONFIG;$/;"	v
+exit_handler	app_map_main.c	/^void exit_handler(void)$/;"	f
+g_app_map_recv_buff	app_map_main.c	/^extern unsigned int g_app_map_recv_buff = APPL_SOCK_BUF_SIZE;$/;"	v
+g_app_map_send_buff	app_map_main.c	/^extern unsigned int g_app_map_send_buff = APPL_SOCK_BUF_SIZE; $/;"	v
+g_app_map_soc_mgr_recv_buff	app_map_main.c	/^unsigned int g_app_map_soc_mgr_recv_buff = SOC_MGR_MAX_BUF;$/;"	v
+g_app_map_soc_mgr_send_buff	app_map_main.c	/^unsigned int g_app_map_soc_mgr_send_buff = SOC_MGR_MAX_BUF;$/;"	v
+g_enable_exit_handler	app_map_main.c	/^unsigned short g_enable_exit_handler = APP_FALSE;$/;"	v
+g_syslog_to_be_used	app_map_main.c	/^unsigned char g_syslog_to_be_used=APP_TRUE;$/;"	v
+inst_sig_hdlr	app_map_main.c	/^void inst_sig_hdlr (void)$/;"	f
+log_signal	app_map_main.c	/^void log_signal(int sig)$/;"	f
+main	tes2.c	/^int main(void)$/;"	f
+main	test.c	/^int main()$/;"	f
+map_glb_proto_trace_en	app_map_main.c	/^app_U8bit_t map_glb_proto_trace_en = 0;$/;"	v
+max_fd_val	app_map_main.c	/^int max_fd_val=0;$/;"	v
+my_process_id	app_map_main.c	/^char my_process_id[20];$/;"	v
+p_app_map_current_dir	app_map_main.c	/^app_S8bit_t 			*p_app_map_current_dir;$/;"	v
+sig_usr2_log	app_map_main.c	/^int sig_usr2_log = 0;$/;"	v
+signal_log_n_exit	app_map_main.c	/^void signal_log_n_exit(int sig)$/;"	f
+signal_log_n_ignore	app_map_main.c	/^void signal_log_n_ignore(int sig)$/;"	f
+ss7p_send_to_ss7p_user	app_map_main.c	/^int ss7p_send_to_ss7p_user (unsigned char *p_buffer, unsigned short noctets)$/;"	f
+user_recv_sock_buff	app_map_main.c	/^unsigned int user_recv_sock_buff = 0;$/;"	v
+user_send_sock_buff	app_map_main.c	/^unsigned int user_send_sock_buff = 0;$/;"	v

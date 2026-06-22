@@ -1,0 +1,14 @@
+
+export SS7P_PATH=/home/jasleen/ss7_platform
+export SS7_PH_LIC=${SS7P_PATH}/conf/lic
+export SS7_PH=/home/jasleen/ss7_platform/conf/em
+export APPL_PATH=/home/jasleen/appl_platform
+export APP_PH=$APPL_PATH/conf/em
+export APP_PH_LIC=$APPL_PATH/conf/lic
+export LD_LIBRARY_PATH=${SS7P_PATH}/lib/Linux:${APPL_PATH}/lib/Linux:$LD_LIBRARY_PATH:${APPL_PATH}
+export LD_LIBRARY_PATH=${SS7P_PATH}/lib/Linux:$LD_LIBRARY_PATH
+export WHITELIST=/home/jasleen/whitelist
+export LD_PRELOAD=/home/jasleen/ss7_platform/lib/Linux/libss7p.so
+export SS7P_TCAPUMR_DLIB=/home/jasleen/ss7_platform/lib/Linux/libss7p_tcap_umr.so
+export SS7P_MTP3UMR_DLIB=/home/jasleen/ss7_platform/lib/Linux/libss7p_mtp3_umr.so
+

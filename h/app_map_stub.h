@@ -1,0 +1,2 @@
+#define APP_MAP_MAX_APIS  400 
+#define APP_MAP_MAX_FILE_LENGTH  100 

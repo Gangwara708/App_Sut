@@ -1,0 +1,234 @@
+1111
+#TAG_LENGTH value(comma separated)
+#choice enum
+1 1
+#response (result,user_error)
+#######################result (imsi(),routing_info(choice,roaming_number(length,value),forwarding_data(forwarded_to_number(length,value),is_forwarding_options,forwarding_options(length,value))),is_cug_check_info,cug_check_info)
+#imsi
+4 0x01,0x03,0x04,0x05
+#location_info_with_lmsi(network_node_number,lmsi,extension,gprs_node_indicator,additional_number)
+#choice 
+1 1
+#msc_number
+2 0x02,0x04
+#is_lmsi
+1 1
+#lmsi
+4 0x01,0x03,0x04,0x04
+##################user_error
+#error_code (U16bit)
+1 0x01
+#is_parameter_present
+1 1
+#Element_Number (Error Info)
+1 5
+#########################################1 ################################
+#sys_failure = 1(choice (U16),network_resource(enum),extensible_system_failure_param (is_network_resource,network_resource(enum),extension_container))
+#choice
+1 0x01 
+#network_resource
+1 1
+#extensible_system_failure_param (is_network_resource,network_resource(enum),extension_container))
+#is_network_resource
+1 1
+#network_resource (enum)
+1 1
+#extension_container
+###########################################################################
+
+#data_missing = 2,unexpec_data  = 3,incompat_term = 4,res_limitation = 5,num_changed = 6,unidentified_sub =7,illegal_sub = 8,illegal_equip = 9,bearer_serv_not_prov = 10,teleserv_not_prov = 11,target_cell_out_gca = 12,tracing_buffer_full 13,no_roaming_nb = 14,no_sub_reply = 15,forwarding_violation = 16,forwarding_failed  = 17,or_not_allowed = 18,ati_not_allowed = 19,atsi_not_allowed= 20 ,atm_not_allowed = 21,info_not_avail = 22,illegal_ss_op = 23,ss_not_avail = 24,ss_sub_violation = 25,mesg_wait_list_full = 26,no_group_call_nb = 27,unauth_req_network = 28,unk_or_unreach_lcscli = 29,mm_event_not_supp = 30(extension container)
+
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+
+########################################################################
+# fac_not_sup  = 31(extension container,is_shape_of_location_estimate_not_supported,shape_of_location_estimate_not_supported,is_needed_lcs_capability_not_supported_in_serving_node,needed_lcs_capability_not_supported_in_serving_node)
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_shape_of_location_estimate_not_supported
+1 1
+#shape_of_location_estimate_not_supported S8bit
+1 0x01
+#is_needed_lcs_capability_not_supported_in_serving_node
+1 1
+#needed_lcs_capability_not_supported_in_serving_node
+1 0x01
+########################################################################
+#unknown_sub  = 32(extensio_container,is_unknown_subscriber_diagnostic,unknown_subscriber_diagnostic(enum))
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_unknown_subscriber_diagnostic
+1 1
+#unknown_subscriber_diagnostic
+1 1
+########################################################################
+#roam_not_allowed  = 33(roaming_not_allowed_cause (enum),extension_container)
+#roaming_not_allowed_cause
+1 1
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+########################################################################
+
+#absent_sub = 34(extension_container , is_absent_subscriber_reason,absent_subscriber_reason(enum))
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_absent_subscriber_reason
+1 1
+#absent_subscriber_reason
+1 1
+########################################################################
+
+#busy_sub = 35(extension_container,is_ccbs_possible,ccbs_possible(S8bit),is_ccbs_busy,ccbs_busy(S8bit))
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_ccbs_possible
+1 1
+#ccbs_possible 
+1 0x01
+#is_ccbs_busy
+1 1
+#ccbs_busy
+1 0x01
+########################################################################
+
+#call_barred = 36(choice,call_barring_cause(enum),extensible_call_barred_param (is_call_barring_cause,call_barring_cause (enum),extension_container,is_unauthorised_message_originator,unauthorised_message_originator (S8bit)))
+#choice
+1 0x01
+#call_barring_cause
+1 1
+#extensible_call_barred_param (is_call_barring_cause,call_barring_cause (enum),extension_container,is_unauthorised_message_originator,unauthorised_message_originator (S8bit))
+#is_call_barring_cause 
+1 1
+#call_barring_cause
+1 1
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_unauthorised_message_originator
+1 1
+#unauthorised_message_originator
+1 0x01
+########################################################################
+#cug_reject= 37 (is_cug_reject_cause ,cug_reject_cause(enum),extension_container)
+
+########################################################################
+#ss_incompat_cause = 38(is_ss_code,ss_code (length,value),is_basic_service,basic_service(choice,bearer_service (length,value),teleservice(length,value),is_ss_status,ss_status (length,value)))
+#is_ss_code
+1 1
+#ss_code
+2 0x01,0x02
+#is_basic_service
+1 1
+#basic_service(choice,bearer_service (length,value),teleservice(length,value),is_ss_status,ss_status (length,value))
+# choice
+1 0x01
+#bearer_service
+2 0x01,0x02
+#teleservice
+2 0x01,0x02
+#is_ss_status
+1 1
+#ss_status
+2 0x01,0x02
+########################################################################
+#pw_reg_fail_cause  = 39(enum)
+1 1
+########################################################################
+#short_term_denial  = 40,long_term_denial = 41(S8bit)
+#placeholder
+1 0x01
+
+########################################################################
+#sub_busy_for_mt_sms  = 42(extension_container,is_gprs_connection_suspended,gprs_connection_suspended (S8bit))
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_gprs_connection_suspended
+1 1
+#gprs_connection_suspended
+1 0x01
+########################################################################
+#sm_del_fail_cause = 43(sm_enumerated_delivery_failure_cause (enum),is_diagnostic_info (enum),diagnostic_info (length,value),extension_container)
+#sm_enumerated_delivery_failure_cause
+1 1
+#is_diagnostic_info
+1 1
+#diagnostic_info
+2 0x01,0x02
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+########################################################################
+#absent_sub_sm= 44 (is_absent_subscriber_diagnostic_sm,absent_subscriber_diagnostic_sm (U16),extension_container,additional_absent_subscriber_diagnostic_sm (U16bit))
+#is_absent_subscriber_diagnostic_sm
+1 1
+#absent_subscriber_diagnostic_sm
+1 0x01
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#additional_absent_subscriber_diagnostic_sm
+1 0x01
+########################################################################
+#unauth_lcsclient = 45(is_unauthorized_lcsclient_diagnostic,unauthorized_lcsclient_diagnostic (enum),extension_container)
+#is_unauthorized_lcsclient_diagnostic
+1 1
+#unauthorized_lcsclient_diagnostic
+1 1
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+########################################################################
+#pos_method_fail = 46(is_position_method_failure_diagnostic,position_method_failure_diagnostic(enum),extension_container)
+#is_position_method_failure_diagnostic
+1 1
+#position_method_failure_diagnostic 
+1 1
+#is_extension
+1 1
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+########################################################################
+#ss_status  = 47(length,value)
+########################################################################

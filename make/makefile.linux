@@ -1,0 +1,29 @@
+#OUTPUT=MAP_Appl
+OUTPUT1=MAP_Appl_new
+
+#INPUT=../src/MAP_Application_SRISM_PUSSR_Responder.c_geet
+INPUT1=../src/MAP_Application_SRISM_PUSSR.c
+APPL_ROOT=${APPL_PATH}
+include ${APPL_ROOT}/custom/app_map.mk
+
+INC_D=-I./inc -I${APPL_ROOT}/include  ${APPL_INCLUDES} \
+	-I${APPL_ROOT}/source/cspl/h -I${APPL_ROOT}/source/cspl/ports/linux/ \
+	-I${APPL_PATH}/custom/include\
+	-I${APPL_ROOT}/source/map/ext_if/user/h \
+	-I${APPL_ROOT}/source/map/ext_if/sme/h \
+	-I${APPL_ROOT}/source/map/ext_if/tcap/h \
+	-I${APPL_ROOT}/source/map/ext_if/user/h/version_1 \
+	-I${APPL_ROOT}/source/map/ext_if/user/h/version_2 \
+	-I${APPL_ROOT}/source/map/h \
+	-I${APPL_PATH}/../send/h \
+	-I${APPL_PATH}/../send/MAP_USER/h \
+	-I${APPL_ROOT}/source/h 
+
+OWNFLAGS=  -g  -Wall $(INC_D) -Wl,--no-as-needed
+
+all:
+	gcc ${OWNFLAGS} -L ${APPL_ROOT}/lib/Linux -D_REENTRANT -DMAP_NETWORK_INDICATOR_SUPPORT -lapp_map_user -lnsl -ldl -lm -lrt -lpthread  -o ${OUTPUT1} ${INPUT1} 
+
+clean:
+	$(APPL_RM) $(OUTPUT1)
+

@@ -1,0 +1,19 @@
+#==============================================================================
+# MAP_RESET_INDICATION Configuration Buffer File
+# File: ../buffers/MAP_V1_RESET_INDICATION
+# Format: TAG_LENGTH value(comma separated)
+#==============================================================================
+1111
+#TAG_LENGTH value(comma separated)
+
+#------------------------------------------------------------------------------
+# Default Configuration
+#------------------------------------------------------------------------------
+#network_resource (0=PLMN, 1=HLR, 2=VLR, 3=Previous VLR, 4=Controlling MSC, 5=VMSC, 6=EIR, 7=RSS)
+1 2
+#originating_entity_number (E.164 format, TBCD encoded)
+7 0x91,0x12,0x34,0x56,0x78,0x90,0xF1
+#is_hlr_id (0=No, 1=Yes)
+1 0
+#hlr_id.count (Number of HLR entries, 0-5)
+1 0

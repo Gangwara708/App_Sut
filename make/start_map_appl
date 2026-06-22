@@ -1,0 +1,108 @@
+#! /bin/bash 
+###############################################################################
+##
+##    Filename   :    start_map_appl
+##
+##    Purpose    : This file provides shell script to run cli 
+##				    
+##
+##    NOTE       : This file contain three sections
+##                 01 Environment Variables
+##                 02 Script Functions/Variable
+##                 03 Run Instruction
+###############################################################################
+
+###############################################################################
+## SECTION 01 Environment Variables
+## This section defines the environment variables to be exported.
+###############################################################################
+DSS7_OS=`(uname -s) 2>/dev/null`
+
+if [ $DSS7_OS = "SunOS" ]
+then
+export XTERM=/usr/openwin/bin/xterm
+fi
+if [ $DSS7_OS = "Linux" ]
+then
+export XTERM=/usr/bin/xterm
+fi
+
+#Below Env. variable need to be defined and exported for Running SME
+GDB=gdb
+WITH_GDB=0
+TITLE_STR="APP:MAP:APPL"
+###############################################################################
+## SECTION 02 Script Variable
+## This section contains variables to be used by this script
+###############################################################################
+BASE_DIR=${PWD}/..
+PWD_DIR=${PWD}
+
+###############################################################################
+## SECTION 03 Run Instruction
+## This section contain the build instructions
+###############################################################################
+EXIT() {
+cd ${PWD_DIR}
+exit
+}
+
+PRINT_USAGE() {
+echo "Usage:"
+	echo "start_map_appl -a -p -r -q [-t] [-n] [-c]"
+	echo "start_map_appl -h   for viewing help  "   
+	echo "start_map_appl -v   for viewing version  "   
+   	echo "  -a - IP Address at which Active EM is executing."
+		echo "       Note: Do not specify localhost or 127.0.0.1 as IP address"
+	echo "  -p - Port at which Active EM would be listening."
+   	echo "  -r - IP Address at which Redundant EM is executing."
+		echo "       Note: Do not specify localhost or 127.0.0.1 as IP address"
+   	echo "  -q - Port at which Redundant EM would be listening."
+   	echo "  -t - Optional Range checking of parameters at CLI"
+   	echo "  -n - Enable Event logging at CLI in file client_events.log"	
+	echo "  -c - [Min client port-Max client port]. The CLI binds to one of these client ports while connecting to EM"
+	echo "Example:"
+	echo "MAP_Appl_new -i 1 -a 172.16.105.224:9300 -s 172.16.105.224:9400 -m 172.16.105.224 -t 3" 
+	echo "  "   
+}
+
+if [ ! -n "$1" ]
+then
+  PRINT_USAGE
+else
+INPUT_STR=" "
+for arg in "$@"  
+do
+  INPUT_STR="${INPUT_STR} $arg  "	
+  case $arg in
+  	"-G")
+		WITH_GDB=1
+		;;
+  	"-g")
+		WITH_GDB=1
+		;;
+    "-v")
+		${BASE_DIR}/make/MAP_Appl_new -v
+        EXIT
+        ;;
+  	"-h")
+		PRINT_USAGE	
+		EXIT
+		;;
+   esac
+done 
+	
+	
+case $WITH_GDB in 
+	1)
+		$XTERM -title $TITLE_STR -sl 5000 -sb -fg black -bg lightcyan -e ${GDB} ${BASE_DIR}/make/MAP_Appl_new &
+		;;
+	*)
+		$XTERM -title $TITLE_STR  -sl 5000 -sb  -fg black -bg lightcyan  -e  ${BASE_DIR}/make/MAP_Appl_new ${INPUT_STR} &
+		;;
+esac
+fi	
+
+
+
+

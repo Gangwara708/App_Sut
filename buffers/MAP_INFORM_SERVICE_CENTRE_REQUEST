@@ -1,0 +1,24 @@
+11111111111
+#TAG_LENGTH value(comma separated)
+#is_stored_msisdn
+1 1
+#stored_msisdn
+2 0x04,0x04
+#is_mw_status
+1 1
+#mw_status value
+2 0x04,0x03
+#is_extension
+1 0
+#ext_obj_id will be : separated 3 0x01,0x010,0xAA:4,0x00,0x44,0x00,0x43 
+1 3,0x01,0x01,0xAA
+#encoded 2 0x01,0x01,0xBB:NULL
+1 3,0x01,0x01,0xBB
+#is_absent_subscriber_diagnostic
+1 0
+#absent_subscriber_diagnostic_sm 2Byte U16
+1 0x04
+#is_additional_absent_subscriber_diagnostic_t
+1 0
+#additional_absent_subscriber_diagnostic_sm 2 Byte U16bit
+1 0x05

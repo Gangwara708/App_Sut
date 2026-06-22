@@ -1,0 +1,16 @@
+1111111
+#TAG_LENGTH value(comma separated)
+#imsi
+5 0x09,0x21,0x43,0x65,0x87
+#msisdn
+5 0x91,0x12,0x34,0x56,0x78
+#category
+1 0x01
+#subscriber_status
+1 0
+#bearer_service_list
+1 0x11
+#teleservice_list
+1 0x21
+#provisioned_suppl_services
+1 0

@@ -1,0 +1,225 @@
+1781589346
+############################################################################
+LOGS_Map_Dmr_Inst_1 Log File Opened at [[ Jun 16 05.55.46.148 ]  (hr.min.sec.usec)]
+############################################################################
+
+ APP_MAP_USER Version: 2.0.2.15.3[ Jun 16 05.55.46.148 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.55.46.148 ] APP_MAP-HEXDUMP
+	  4d  46  01  00   04  05  2a  00   00  00  c8  00   04  05  00  00 
+	  00  00  00  00   2c  00  00  00   01  00  00  00   00  00  00  00 
+	  c8  00  03  05   01  01  00  00   00  00 
+[ Jun 16 05.55.47.013 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.47.013 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.47.013 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.47.013 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.47.014 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.47.014 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.47.015 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.47.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.47.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.55.48.594 ] APPL PORT [MAP] :: received API ID 18 on fd 5
+[ Jun 16 05.55.48.594 ] APP_MAP-HEXDUMP
+	  46  4a  00  01   12  00  10  00   00  00  00  00   04  00  b0  00 
+[ Jun 16 05.55.48.594 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.55.48.595 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   13  00  14  00   00  00  00  00   04  00  b0  00 
+	  80  00  00  00 
+[ Jun 16 05.55.49.000 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.49.000 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.49.000 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.49.000 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.49.001 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.49.001 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.49.001 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.49.459 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.49.459 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.49.459 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.49.459 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.49.460 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.49.460 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.49.460 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.49.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.49.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.55.50.469 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.50.469 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.50.469 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.50.469 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.50.470 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.50.470 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.50.470 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.51.012 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.51.012 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.51.012 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.51.012 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.51.013 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.51.013 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.51.013 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.51.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.51.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.55.51.596 ] APPL PORT [MAP] :: received API ID 18 on fd 5
+[ Jun 16 05.55.51.596 ] APP_MAP-HEXDUMP
+	  46  4a  00  01   12  00  10  00   00  00  00  00   04  00  b1  00 
+[ Jun 16 05.55.51.596 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.55.51.596 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   13  00  14  00   00  00  00  00   04  00  b1  00 
+	  80  00  00  00 
+[ Jun 16 05.55.53.000 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.53.000 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.53.001 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.53.001 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.53.001 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.53.001 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.53.001 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.53.459 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.53.459 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.53.459 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.53.459 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.53.460 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.53.460 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.53.460 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.53.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.53.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.55.54.469 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.54.469 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.54.469 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.54.469 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.54.470 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.54.470 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.54.470 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.54.598 ] APPL PORT [MAP] :: received API ID 18 on fd 5
+[ Jun 16 05.55.54.598 ] APP_MAP-HEXDUMP
+	  46  4a  00  01   12  00  10  00   00  00  00  00   04  00  b2  00 
+[ Jun 16 05.55.54.599 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.55.54.599 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   13  00  14  00   00  00  00  00   04  00  b2  00 
+	  80  00  00  00 
+[ Jun 16 05.55.55.467 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.55.467 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.55.467 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.55.467 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.55.468 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.55.468 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.55.468 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.55.55.468 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.55.468 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.57.013 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.57.013 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.57.013 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.57.013 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.57.013 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.57.013 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.57.013 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.57.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.57.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.55.57.600 ] APPL PORT [MAP] :: received API ID 18 on fd 5
+[ Jun 16 05.55.57.600 ] APP_MAP-HEXDUMP
+	  46  4a  00  01   12  00  10  00   00  00  00  00   04  00  b3  00 
+[ Jun 16 05.55.57.600 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.55.57.600 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   13  00  14  00   00  00  00  00   04  00  b3  00 
+	  80  00  00  00 
+[ Jun 16 05.55.59.000 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.59.000 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.59.000 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.59.000 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.59.001 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.59.001 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.59.001 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.59.459 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.55.59.459 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.55.59.460 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.55.59.460 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.55.59.460 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.55.59.460 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.59.460 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.55.59.468 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.55.59.468 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.56.00.470 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.56.00.470 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.56.00.470 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.56.00.470 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.56.00.471 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.56.00.471 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.00.471 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.00.602 ] APPL PORT [MAP] :: received API ID 18 on fd 5
+[ Jun 16 05.56.00.602 ] APP_MAP-HEXDUMP
+	  46  4a  00  01   12  00  10  00   00  00  00  00   04  00  b4  00 
+[ Jun 16 05.56.00.603 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.56.00.603 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   13  00  14  00   00  00  00  00   04  00  b4  00 
+	  80  00  00  00 
+[ Jun 16 05.56.01.467 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.56.01.467 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.56.01.467 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.56.01.467 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.56.01.468 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.56.01.468 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.56.01.468 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.56.01.468 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.01.468 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.03.012 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.56.03.012 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.56.03.012 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.56.03.012 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.56.03.013 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.56.03.013 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.03.013 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.03.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.56.03.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 
+[ Jun 16 05.56.03.605 ] APPL PORT [MAP] :: received API ID 18 on fd 5
+[ Jun 16 05.56.03.605 ] APP_MAP-HEXDUMP
+	  46  4a  00  01   12  00  10  00   00  00  00  00   04  00  b5  00 
+[ Jun 16 05.56.03.605 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7340
+[ Jun 16 05.56.03.605 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   13  00  14  00   00  00  00  00   04  00  b5  00 
+	  80  00  00  00 
+[ Jun 16 05.56.05.000 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.56.05.001 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.56.05.001 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.56.05.001 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.56.05.002 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.56.05.002 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.05.002 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.05.459 ] APPL PORT [MAP] :: NON Blocking client connection with 172.16.102.34 at port 7440 
+[ Jun 16 05.56.05.459 ] APPL PORT [MAP]:: ERROR: Could not send message to ....[2]
+[ Jun 16 05.56.05.459 ] APPL PORT [MAP]::  Sending API to 172.16.102.34 port 7440
+[ Jun 16 05.56.05.459 ] APP_MAP-HEXDUMP
+	  4d  46  01  01   0c  00  1c  00   00  00  02  00   03  01  00  22 
+	  66  10  ac  80   00  00  00  02   00  02  0f  03 
+[ Jun 16 05.56.05.460 ] APPL PORT [MAP] :: ERROR: IPC: app_map_non_block_write: send syscall failed for entity 2 
+[ Jun 16 05.56.05.460 ] APPL PORT [MAP] :: stopping previous PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.05.460 ] APPL PORT [MAP] :: starting PORT_CONFIGURATION_TIMER for EM2
+[ Jun 16 05.56.05.467 ] APP PORT: APP_PORT_PING_ACTIVITY_TIMER expired.
+[ Jun 16 05.56.05.467 ] APPL PORT [MAP] :: starting APP_PORT_PING_ACTIVITY_TIMER 

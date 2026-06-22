@@ -1,0 +1,490 @@
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_u_abort’:
+../src/MAP_Application_SRISM_PUSSR.c:353: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘fill_extension_params’:
+../src/MAP_Application_SRISM_PUSSR.c:686: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:699: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘fill_user_error’:
+../src/MAP_Application_SRISM_PUSSR.c:847: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:858: warning: pointer targets in passing argument 1 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:858: warning: pointer targets in passing argument 2 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:865: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘map_fill_v2_unstructured_ss_req_resp’:
+../src/MAP_Application_SRISM_PUSSR.c:2772: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:2773: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:2778: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:2794: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_v2_unstructured_ss_req_resp’:
+../src/MAP_Application_SRISM_PUSSR.c:2896: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘print_alert_report’:
+../src/MAP_Application_SRISM_PUSSR.c:3294: warning: format ‘%lu’ expects type ‘long unsigned int’, but argument 7 has type ‘int’
+../src/MAP_Application_SRISM_PUSSR.c:3294: warning: format ‘%lu’ expects type ‘long unsigned int’, but argument 8 has type ‘int’
+../src/MAP_Application_SRISM_PUSSR.c:3294: warning: format ‘%d’ expects type ‘int’, but argument 10 has type ‘long unsigned int’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘print_mt_report’:
+../src/MAP_Application_SRISM_PUSSR.c:3325: warning: format ‘%d’ expects type ‘int’, but argument 8 has type ‘long unsigned int’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘print_srism’:
+../src/MAP_Application_SRISM_PUSSR.c:3388: warning: format ‘%d’ expects type ‘int’, but argument 9 has type ‘long unsigned int’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_delimiter_request’:
+../src/MAP_Application_SRISM_PUSSR.c:3488: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_delimiter_request_with_dlg_id’:
+../src/MAP_Application_SRISM_PUSSR.c:3518: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_open_req’:
+../src/MAP_Application_SRISM_PUSSR.c:4000: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_close_req’:
+../src/MAP_Application_SRISM_PUSSR.c:4028: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_messages’:
+../src/MAP_Application_SRISM_PUSSR.c:4092: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4093: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4100: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4115: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4230: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘char * __restrict__’ but argument is of type ‘U8bit *’
+../src/MAP_Application_SRISM_PUSSR.c:4426: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:4491: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4492: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4499: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4514: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4684: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:4732: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4733: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4740: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4756: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4898: warning: left-hand operand of comma expression has no effect
+../src/MAP_Application_SRISM_PUSSR.c:4938: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:4983: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4984: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:4991: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5007: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5186: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:5235: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5237: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5243: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5258: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5342: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘char * __restrict__’ but argument is of type ‘U8bit *’
+../src/MAP_Application_SRISM_PUSSR.c:5578: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:5632: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5634: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5638: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5653: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5745: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:5785: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5787: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5791: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5806: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5900: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:5760: warning: unused variable ‘cnt’
+../src/MAP_Application_SRISM_PUSSR.c:5945: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5947: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5951: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:5967: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6078: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:6117: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6119: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6123: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6139: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6372: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:6405: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6407: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6411: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6427: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6658: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:6698: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6700: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6704: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6720: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6824: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:6858: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6860: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6864: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6880: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:6984: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:7014: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7016: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7020: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7036: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7144: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:7186: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7188: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7192: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:7208: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8154: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:8207: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8209: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8213: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8229: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8460: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:8505: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8507: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8511: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8527: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8621: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:8659: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8661: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8665: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8681: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:8798: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:8971: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:9010: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9012: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9016: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9031: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9138: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:9172: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9174: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9178: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9194: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9394: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:9433: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9435: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9439: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9454: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9537: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:9614: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:9656: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9658: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9662: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9677: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9793: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:9848: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9850: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9854: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9870: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:9983: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:10030: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10032: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10036: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10052: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10156: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:10188: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10190: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10194: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10210: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10859: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:10894: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10896: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10900: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:10916: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11059: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:11093: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11095: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11099: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11115: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11258: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:11293: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11295: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11299: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11315: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11525: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:11559: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11561: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11565: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11581: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:11999: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:12034: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12036: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12040: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12056: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12418: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:12453: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12455: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12459: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12475: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12666: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:12701: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12703: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12707: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12723: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12924: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:12959: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12961: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12965: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:12981: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13342: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:13424: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:13471: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13473: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13477: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13493: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13651: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:13706: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13708: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13712: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13728: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13886: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:13938: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13940: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13944: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:13960: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14118: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:14170: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14172: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14176: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14192: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14320: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:14411: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:4044: warning: unused variable ‘tmp_var’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘read_scenario’:
+../src/MAP_Application_SRISM_PUSSR.c:14473: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14488: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14495: warning: pointer targets in passing argument 1 of ‘atoi’ differ in signedness
+/usr/include/stdlib.h:148: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14512: warning: pointer targets in passing argument 1 of ‘fgets’ differ in signedness
+/usr/include/stdio.h:626: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14520: warning: pointer targets in passing argument 1 of ‘atoi’ differ in signedness
+/usr/include/stdlib.h:148: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:14539: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘thread_socket’:
+../src/MAP_Application_SRISM_PUSSR.c:14746: warning: implicit declaration of function ‘inet_addr’
+../src/MAP_Application_SRISM_PUSSR.c:14670: warning: unused variable ‘counter’
+../src/MAP_Application_SRISM_PUSSR.c:14670: warning: unused variable ‘yes’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘register_user’:
+../src/MAP_Application_SRISM_PUSSR.c:14882: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘main’:
+../src/MAP_Application_SRISM_PUSSR.c:14999: warning: pointer targets in passing argument 1 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15000: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15003: warning: pointer targets in passing argument 1 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15003: warning: pointer targets in passing argument 2 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15012: warning: pointer targets in passing argument 1 of ‘atoi’ differ in signedness
+/usr/include/stdlib.h:148: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15023: warning: pointer targets in passing argument 1 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15024: warning: pointer targets in passing argument 1 of ‘strtok’ differ in signedness
+/usr/include/string.h:348: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15027: warning: pointer targets in passing argument 1 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15027: warning: pointer targets in passing argument 2 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘const char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15036: warning: pointer targets in passing argument 1 of ‘atoi’ differ in signedness
+/usr/include/stdlib.h:148: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15045: warning: pointer targets in passing argument 1 of ‘strcpy’ differ in signedness
+/usr/include/string.h:128: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+../src/MAP_Application_SRISM_PUSSR.c:15125: warning: pointer targets in passing argument 9 of ‘app_map_init’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:37: note: expected ‘unsigned char *’ but argument is of type ‘char *’
+../src/MAP_Application_SRISM_PUSSR.c:14958: warning: unused variable ‘socketThrId’
+../src/MAP_Application_SRISM_PUSSR.c:14956: warning: unused variable ‘sockattr’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_mt_forw_resp’:
+../src/MAP_Application_SRISM_PUSSR.c:15504: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘send_mo_forw_resp’:
+../src/MAP_Application_SRISM_PUSSR.c:15531: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘app_map_send_to_app_map_user’:
+../src/MAP_Application_SRISM_PUSSR.c:15574: warning: type defaults to ‘int’ in declaration of ‘count’
+../src/MAP_Application_SRISM_PUSSR.c:15640: warning: unused variable ‘mo_fsm_conf’
+../src/MAP_Application_SRISM_PUSSR.c:15729: warning: pointer targets in passing argument 2 of ‘app_map_send_to_app_map’ differ in signedness
+/home/Nexgen_jass/appl_platform/include/app_map_user.h:63: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+../src/MAP_Application_SRISM_PUSSR.c:15991: warning: format ‘%d’ expects type ‘int’, but argument 2 has type ‘long unsigned int’
+../src/MAP_Application_SRISM_PUSSR.c:16001: error: ‘map_service_header_t’ has no member named ‘user_id’
+../src/MAP_Application_SRISM_PUSSR.c:16027: warning: unused variable ‘ussr_confirm’
+../src/MAP_Application_SRISM_PUSSR.c: In function ‘fill_mtfsm_v3_req_arg’:
+../src/MAP_Application_SRISM_PUSSR.c:16559: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/string.h:131: note: expected ‘char * __restrict__’ but argument is of type ‘U8bit *’
+make: *** [all] Error 1

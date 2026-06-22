@@ -1,0 +1,27 @@
+OUTPUT=MAP_Application
+
+INPUT=../src/${OUTPUT}.c
+APPL_ROOT=${APPL_PATH}
+include ${APPL_ROOT}/custom/app_map.mk
+
+INC_D=-I./inc -I${APPL_ROOT}/include  ${APPL_INCLUDES}\
+	 -I${APPL_ROOT}/source/h \
+	-I${APPL_ROOT}/source/cspl/h -I${APPL_ROOT}/source/cspl/ports/solaris/ \
+	-I${APPL_ROOT}/source/map/ext_if/user/h \
+	-I${APPL_ROOT}/source/map/ext_if/sme/h \
+	-I${APPL_ROOT}/source/map/ext_if/tcap/h \
+	-I${APPL_ROOT}/source/map/ext_if/user/h/version_1 \
+	-I${APPL_ROOT}/source/map/ext_if/user/h/version_2 \
+	-I${APPL_ROOT}/source/map/h  \
+	-I/home2/vivek/Imran/Application/h/
+
+OWNFLAGS= -Wall -g -DMEM_DEBUG $(INC_D) 
+
+all:
+	gcc ${OWNFLAGS} -m32 -DMAP_CUSTOM_V1_CHECK_IMEI -L ${APPL_ROOT}/lib/SunOS -lsocket  -lnsl  -lxnet -lm -lrt  -lapp_map_user -lpthread -o ${OUTPUT} ${INPUT}
+
+	mv MAP_Application ../src
+
+clean:
+	$(APPL_RM) $(OUTPUT)
+

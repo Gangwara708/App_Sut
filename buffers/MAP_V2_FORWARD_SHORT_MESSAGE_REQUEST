@@ -1,0 +1,18 @@
+11111111100
+#TAG_LENGTH value(comma separated)
+#sm_rp_da_choice 1-imsi
+1 1
+#sm_rp_da.u.imsi
+8 0x04,0x84,0x46,0x24,0x43,0x53,0x53,0xF0
+#sm_rp_oa.choice 2-service centre
+1 2 
+#sm_rp_oa.u.service_centre
+7 0x91,0x19,0x29,0x02,0x50,0x05,0x02
+#sm_rp_ui.length
+1 6
+#sm_rp_ui.value
+1 7
+#is_more_messages_to_send
+1 0
+#more_messages_to_send
+1 0x00

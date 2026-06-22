@@ -1,0 +1,6 @@
+1111
+#TAG_LENGTH value(comma separated)
+#imsi
+7 0x19,0x09,0x00,0x00,0x10,0x00,0x10
+#alert_reason (MAP_MEMORY_AVAILABLE = 0, MAP_MS_PRESENT = 1)
+1 0

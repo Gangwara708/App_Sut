@@ -1,0 +1,16 @@
+1111111
+#TAG_LENGTH value(comma separated)
+#imsi (Index 0)
+7 0x19,0x09,0x00,0x00,0x10,0x00,0x00
+#is_vlr_number (Index 1 - Boolean: 0=false, 1=true)
+1 1
+#vlr_number (Index 2)
+6 0x19,0x09,0x00,0x10,0x01,0x87
+#is_sgsn_number (Index 3 - Boolean: 0=false, 1=true)
+1 0
+#sgsn_number (Index 4)
+5 0x00,0x00,0x00,0x00,0x00
+#is_extension (Index 5 - Boolean: 0=false, 1=true)
+1 0
+#map_pvt_ext_count (Index 6)
+1 0

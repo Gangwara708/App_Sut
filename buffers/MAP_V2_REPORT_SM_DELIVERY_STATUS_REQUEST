@@ -1,0 +1,11 @@
+1111
+#TAG_LENGTH value(comma separated)
+#msisdn
+4 0x02,0x02,0x03,0x05
+#service_centre_address
+2 0x00,0x03
+#is_sm_delivery_outcome
+1 1
+#sm_delivery_outcome_t enum
+1 1
+
