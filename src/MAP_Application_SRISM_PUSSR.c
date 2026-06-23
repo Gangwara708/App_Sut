@@ -211,6 +211,9 @@ typedef enum
     MAP_V1_SRI_SM,
     MAP_V2_SRI_SM,
     MAP_V3_SRI_SM,
+    /* changes by aman for Parse SRI for SM S*/
+    MAP_V1_REPORT_SM_STATUS,
+    /* changes by aman for Parse SRI for SM E*/
     MAP_V2_REPORT_SM_STATUS,
     MAP_V3_REPORT_SM_STATUS,
     MAP_V1_PRN,
@@ -3988,6 +3991,17 @@ luser_id = vlr_user_id ;
 		version = 2;
 
     }
+    /* changes by aman for Parse SRI for SM S*/
+    else if(!strncmp(api_name,"MAP_V1_REPORT_SM_DELIVERY_STATUS_REQUEST",strlen("MAP_V1_REPORT_SM_DELIVERY_STATUS_REQUEST")))
+    {
+    	luser_id = msc_user_id;
+		lssn = MSC_SSN;
+		dest_ssn = HLR_SSN;
+		options = MAP_AC_SHORT_MSG_GATEWAY;
+		version = 1;
+
+    }
+    /* changes by aman for Parse SRI for SM E*/
     else if(!strncmp(api_name,"MAP_INFORM_SERVICE_CENTRE_REQUEST",strlen("MAP_INFORM_SERVICE_CENTRE_REQUEST")))
     {
     	luser_id = 8;
@@ -7073,7 +7087,137 @@ void send_messages(char *api_name,int num_of_messages,int flag_dialogue,int no_m
 
 		}
 
-		else if(!strncmp(api_name,"MAP_V1_SEND_ROUTING_INFORMATION_REQUEST",strlen("MAP_V1_SEND_ROUTING_INFORMATION_REQUEST"))) 
+		/* changes by aman for Parse SRI for SM S*/
+		else if(!strncmp(api_name,"MAP_V1_REPORT_SM_DELIVERY_STATUS_REQUEST",strlen("MAP_V1_REPORT_SM_DELIVERY_STATUS_REQUEST")))
+		{
+
+			index = 0;
+
+			send_api = app_mem_get(sizeof(map_api_struct_t));
+			map_memzero(send_api,sizeof(map_api_struct_t));
+
+			map_report_sm_delivery_status_request_t *p_report_sm_delivery_req_v1 = NULL,*p_report_sm_delivery_req_v1_temp = NULL;
+			p_report_sm_delivery_req_v1 = (map_report_sm_delivery_status_request_t *)\
+			app_mem_get (sizeof (map_report_sm_delivery_status_request_t));
+			map_memzero(p_report_sm_delivery_req_v1, sizeof (map_report_sm_delivery_status_request_t));
+
+			fill_api_header(&(send_api->header), msc_user_id);
+			send_api->header.api_id = MAP_REPORT_SM_DELIVERY_STATUS_REQUEST;
+			send_api->header.spare1 = g_sap;
+			send_api->header.ver = 1;
+			send_api->header.len = sizeof(map_report_sm_delivery_status_request_t);
+
+			fill_header(&p_report_sm_delivery_req_v1->header,corr_id);
+
+			sprintf(filename,"../buffers/%s",api_name);
+			fp_apis = fopen(filename,"r");
+
+			fgets(line_val, MAX_LINE_BYTE, fp_apis); /* Extracting BitMap Value */
+			memset(bitmap_array,'\0',20);
+			strncpy(bitmap_array,line_val,20);
+
+			while(1)
+			{
+				if (!fgets(line_val, MAX_LINE_BYTE, fp_apis)) {
+
+					printf("MAP_V1_REPORT_SM_DELIVERY_STATUS_REQUEST is successfully Parsed\n\n");
+					break;
+				}
+
+				if ((*line_val == ' ') ||
+						(*line_val == '#') ||
+						(*line_val == '\n')) {
+					continue;
+				}
+				else{
+					if(1)
+					{
+						token_length = strtok(line_val," ");
+						token_val = strtok(NULL," ");
+
+						token_val_temp = (char *)malloc(strlen(token_val));
+						strcpy(token_val_temp,token_val);
+
+						printf("Token Length [%s] \n",token_length);
+						printf("Token Value [%s] \n",token_val);
+						if(token_val == NULL)
+							continue;
+
+						for(counter = 0;counter < atoi(token_length);counter++)
+						{
+							if(counter == 0)
+							{
+								token_generic = strtok(token_val,",");
+							}
+							else{
+								token_generic = strtok(NULL,",");
+							}
+
+							if(index == 0)
+							{
+								p_report_sm_delivery_req_v1->arg.msisdn.length = atoi(token_length);
+								p_report_sm_delivery_req_v1->arg.msisdn.value[counter] = hstoi(token_generic);
+							}
+							else if(index == 1)
+							{
+								p_report_sm_delivery_req_v1->arg.service_centre_address.length = atoi(token_length);
+								p_report_sm_delivery_req_v1->arg.service_centre_address.value[counter] = hstoi(token_generic);
+							}
+							else if(index == 2)
+							{
+								p_report_sm_delivery_req_v1->arg.sm_delivery_outcome = atoi(token_generic);
+							}
+						}
+
+						index++;
+
+					}
+					else{
+						printf("No Optional Parameter is there so Please check\n");
+						break;
+					}
+				}
+			}
+
+			fclose(fp_apis);
+
+			for(cycle_counter = 0;cycle_counter < num_cycles ; cycle_counter++ )
+			{
+				for(message_counter = 0; message_counter < no_mess_in_burst;message_counter++ )
+				{
+					printf("Sending The message \n");
+					send_api_temp = (map_api_struct_t *)app_mem_get(sizeof(map_api_struct_t));
+					map_memzero(send_api_temp,sizeof(map_api_struct_t));
+
+					p_report_sm_delivery_req_v1_temp = (map_report_sm_delivery_status_request_t *)\
+					app_mem_get(sizeof (map_report_sm_delivery_status_request_t));
+					map_memzero(p_report_sm_delivery_req_v1_temp, sizeof (map_report_sm_delivery_status_request_t));
+
+					corr_id = app_map_get_new_correlation_id();
+					p_report_sm_delivery_req_v1->header.corr_id = corr_id;
+					send_open_req(api_name ,corr_id);
+
+					memcpy(p_report_sm_delivery_req_v1_temp,p_report_sm_delivery_req_v1,sizeof (map_report_sm_delivery_status_request_t));
+					memcpy(send_api_temp,send_api,sizeof(map_api_struct_t));
+
+					p_report_sm_delivery_req_v1_temp->header.invoke_id = message_counter + 1;
+					p_report_sm_delivery_req_v1_temp->header.last_component = 1;
+					p_report_sm_delivery_req_v1_temp->header.corr_id = corr_id;
+
+					send_api_temp->p_data = p_report_sm_delivery_req_v1_temp;
+					app_map_send_to_app_map((unsigned char *)send_api_temp, &error);
+				}
+			}
+
+			sleep(1);
+
+			app_mem_free(send_api);
+			app_mem_free(p_report_sm_delivery_req_v1);
+
+		}
+		/* changes by aman for Parse SRI for SM E*/
+
+		else if(!strncmp(api_name,"MAP_V1_SEND_ROUTING_INFORMATION_REQUEST",strlen("MAP_V1_SEND_ROUTING_INFORMATION_REQUEST")))
 		{
 
 			index = 0;
